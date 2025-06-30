@@ -1,0 +1,42 @@
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2015 cache/options directory
+.vs/
+# Visual Studio 2017 cache/options directory
+.vs/
+# Visual Studio 2019 cache/options directory
+.vs/
+
+# Rider
+.idea/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.[Tt]est[Ll]og*
+[Nn][Uu]nit[Tt]est[Rr]esult*
+
+# F#
+*.fsi.dll
+*.fsscript.fsx
