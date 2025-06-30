@@ -11,18 +11,31 @@ This project implements a route planning algorithm for an Overhead Hoist Transpo
 
 ## How to Use
 
-1.  **Build the project**: Compile the C# code using a .NET compiler.
-2.  **Run the application**: Execute the compiled application.
-3.  **Load Layout**: The application will automatically load the layout defined in `CompleteTest.cs`.
-4.  **Calculate Route**:
-    -   The console will display a list of all available nodes.
-    -   Enter the ID of the starting node.
-    -   Enter the ID of the ending node.
-    -   The application will display the calculated route, including the steps, node types, and sides.
-    -   You can then choose to view the route in a detailed or simplified JSON format.
+### Running the Application
+
+1.  **Download the Release**: Go to the [Releases page](https://github.com/kivxxx/OHT_algorithm_Astar/releases) and download the `OHTAlgorithm.dll` from the latest release (e.g., `V1.0.0`).
+2.  **Open a Terminal**: Navigate to the directory where you downloaded the `OHTAlgorithm.dll`.
+3.  **Run the Application**: Execute the application using the .NET runtime:
+    ```bash
+    dotnet OHTAlgorithm.dll
+    ```
+
+### Interacting with the Application
+
+Once the application starts, it will automatically load the predefined layout and display available nodes.
+
+1.  **Enter Start Node ID**: The console will prompt you to enter the ID of the starting node (e.g., `H1`, `D1`, `V1`). Type the ID and press Enter.
+2.  **Enter End Node ID**: Next, enter the ID of the ending node. Type the ID and press Enter.
+3.  **View Route**: The application will calculate and display the shortest route, showing each step with its node ID and side.
+4.  **Choose Output Format**: After displaying the route, you will be prompted to choose an output format:
+    -   `1`: Full JSON (includes `type` and `switch-option`)
+    -   `2`: Simplified JSON (includes `no`, `id`, `side`)
+    -   `3`: Do not display JSON
+    Enter your choice (1, 2, or 3) and press Enter.
+5.  **Continue or Exit**: You can continue to calculate more routes by entering new start and end node IDs, or type `exit` when prompted for the start node ID to quit the application.
 
 ## Code Structure
 
 -   `OHTRouteCalculator.cs`: Contains the core logic for the A* algorithm and route calculation.
--   `CompleteTest.cs`: Provides an interactive console for testing the route calculator.
+-   `CompleteTest.cs`: Provides an interactive console for testing the route calculator and defines the sample layout.
 -   `OHTAlgorithm.csproj`: The C# project file.
